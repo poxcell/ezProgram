@@ -12,7 +12,7 @@ var stylesHtml = {
     FindMaxWeight: [
         '<div class="top-item item-content collapse"><p>',
         '</p><p class="srp"> Find Max weight </p></div><div class="middle-item item-content"><p>Find ',
-        ' Reps Max</p></div><div class="max-weight item-content"><form class="weight-form MaxWeightForm"><label for="max-Weight">Max Weight: </label><input type="number" name="max-Weight"><br></form></div><hr><div class="middle-item item-content"><p class ="workingSets">working sets weight: ',
+        ' Reps Max</p></div><div class="max-weight item-content"><form onSubmit="return false" class="weight-form MaxWeightForm"><label for="max-Weight">Max Weight: </label><input type="number" name="max-Weight"><br></form></div><hr><div class="middle-item item-content"><p class ="workingSets">working sets weight: ',
         ' lbs </p><p > ',
         ' sets / ',
         ' reps</p></div></div></div>'
@@ -23,7 +23,7 @@ var stylesHtml = {
         '</p><p class="srp">',
         ' sets / ',
         ' reps</p></div></div><div class="middle-item item-content">',
-        '<form class="weight-form Previousweight"><label for="previous-Weight">Weight: </label><input type="number" name="max-Weight"><br></form></div>'
+        '<form onSubmit="return false" class="weight-form Previousweight"><label for="previous-Weight">Weight: </label><input type="number" name="max-Weight"><br></form></div>'
     ],
 
     SuperSet: [
@@ -46,13 +46,13 @@ var stylesHtml = {
         '<div class="top-item item-content "><p> ',
         '</p><p class="srp"> ',
         ' reps + ',
-        ' Partials</p></div><div class="middle-item item-content"><form class="weight-form Previousweight"><label for="previous-Weight">Weight: </label><input type="number" name="max-Weight"><br></form></div>'
+        ' Partials</p></div><div class="middle-item item-content"><form onSubmit="return false" class="weight-form Previousweight"><label for="previous-Weight">Weight: </label><input type="number" name="max-Weight"><br></form></div>'
     ],
     Simple: [
         '<div class="top-item item-content "><p>',
         '</p><p class="srp">',
         ' sets / ',
-        'reps</p></div><div class="middle-item item-content"><form class="weight-form Previousweight"><label for="previous-Weight">Weight: </label><input type="number" name="max-Weight"><br></form></div>',
+        'reps</p></div><div class="middle-item item-content"><form onSubmit="return false" class="weight-form Previousweight"><label for="previous-Weight">Weight: </label><input type="number" name="max-Weight"><br></form></div>',
     ]
 
 }
