@@ -25,6 +25,12 @@ var stylesHtml = {
         ' reps</p></div></div><div class="middle-item item-content">',
         '<form onSubmit="return false" class="weight-form Previousweight"><label for="previous-Weight">Weight: </label><input type="number" name="max-Weight"><br></form></div>'
     ],
+    WeeklyIncreaseRepsSS: [
+        '<div class="top-item item-content "><p>',
+        '</p><p class="srp">',
+        ' sets / ',
+        'reps</p></div><div class="middle-item item-content"><form onSubmit="return false" class="weight-form Previousweight"><label for="previous-Weight">Weight: </label><input type="number" name="max-Weight"><br></form></div>',
+    ],
 
     SuperSet: [
         '<div class="top-item item-content collapse"><p>',
@@ -39,6 +45,12 @@ var stylesHtml = {
         '</p><p class="srp"> Tiempo: ',
         ' /s</p></div>'
     ],
+    WeeklyIncreaseRepsSS:[
+        '<div class="top-item item-content "><p>',
+        '</p><p class="srp">',
+        ' sets / ',
+        ' reps</p></div><div class="middle-item item-content"><form onSubmit="return false" class="weight-form Previousweight"><label for="previous-Weight">Weight: </label><input type="number" name="max-Weight"><br></form></div>',
+    ],
 
 
 
@@ -52,7 +64,7 @@ var stylesHtml = {
         '<div class="top-item item-content "><p>',
         '</p><p class="srp">',
         ' sets / ',
-        'reps</p></div><div class="middle-item item-content"><form onSubmit="return false" class="weight-form Previousweight"><label for="previous-Weight">Weight: </label><input type="number" name="max-Weight"><br></form></div>',
+        ' reps</p></div><div class="middle-item item-content"><form onSubmit="return false" class="weight-form Previousweight"><label for="previous-Weight">Weight: </label><input type="number" name="max-Weight"><br></form></div>',
     ]
 
 }
@@ -128,6 +140,16 @@ function stylesStr(style, e, week) {
                     stylesHtml.Simple[3]
 
 
+            }
+            if (e.SSexercises[i].style === "WeeklyIncreaseRepsSS") {
+                tempStr += stylesHtml.WeeklyIncreaseRepsSS[0] +
+                e.SSexercises[i].name +
+                stylesHtml.WeeklyIncreaseRepsSS[1] +
+                e.SSexercises[i].sets +
+                stylesHtml.WeeklyIncreaseRepsSS[2] +
+                (e.SSexercises[i].reps + week) +
+                stylesHtml.WeeklyIncreaseRepsSS[3]
+                
             }
 
 

@@ -134,16 +134,18 @@ var workout1 = {
                 style: "SuperSet",
                 sets: 3,
                 SSexercises: [{
-                        style: "CompletePartial",
+                        style: "WeeklyIncreaseRepsSS",
                         name: "Bicep Concentrado",
                         weight: 0,
                         reps: 8,
+                        sets: 3,
                     },
                     {
-                        style: "CompletePartial",
+                        style: "WeeklyIncreaseRepsSS",
                         name: "SL Deadlift",
                         weight: 0,
                         reps: 5,
+                        sets: 3,
                     }
                 ]
             },
@@ -185,7 +187,7 @@ var workout1 = {
             },
             {
                 style: "FindMaxWeight",
-                name: "single Arm DB Press",
+                name: "single Arm Bench Press",
                 weight: 0,
                 reps: [9, 6, 3, 9],
                 sets: [3, 3, 3, 3]
@@ -236,11 +238,11 @@ var workout1 = {
             },
 
             {
-                style: "FindMaxWeight",
+                style: "WeeklyIncreaseReps",
                 name: "Single Leg Squat",
                 weight: 0,
-                reps: [9, 6, 3, 9],
-                sets: [3, 3, 3, 3]
+                reps: 5,
+                sets: 5
             }, 
             {
                 style: "SuperSet",
